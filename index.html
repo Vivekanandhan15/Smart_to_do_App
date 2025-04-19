@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart To-Do App</h1>
+
+    <div class="task-input">
+      <input type="text" id="task" placeholder="Enter a task..." />
+      <select id="priority">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="High">High</button>
+      <button class="filter-btn" data-filter="Medium">Medium</button>
+      <button class="filter-btn" data-filter="Low">Low</button>
+    </div>
+
+    <input type="text" id="search" placeholder="Search tasks..." />
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
